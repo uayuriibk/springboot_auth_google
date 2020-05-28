@@ -1,5 +1,5 @@
 # springboot_auth_google
-Spring Boot, Auth2.0 (Google Authorization), gradle etc 
+Java, Spring Boot, Auth2.0 (Google Authorization) etc 
 
 1.Create application (type: web) whithin google developers console and generate client_id with client_secret 
 https://console.developers.google.com/apis/credentials
