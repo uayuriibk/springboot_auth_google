@@ -10,4 +10,4 @@ https://console.developers.google.com/apis/credentials
 
 3.Run application. 
 localhost:8080/notrestricted - accessible is available. 
-localhost:8080/restricted - acessible after Google authorization passing (using the account linked to the crated application in the 1st step) 
+localhost:8080/restricted - accessible after passed Google authorization (using the account linked to the created application in the 1st step) 
