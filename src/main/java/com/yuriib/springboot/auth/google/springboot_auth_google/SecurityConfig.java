@@ -7,12 +7,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private static final String notRestrictedUrl = "/notrestricted";
+
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .logout(l -> l.logoutSuccessUrl("/").permitAll())
                 .antMatcher("/**").authorizeRequests()
-                .antMatchers("/notrestricted").permitAll()
+                .antMatchers(notRestrictedUrl).permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .oauth2Login();
